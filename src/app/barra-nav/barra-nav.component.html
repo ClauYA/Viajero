@@ -1,28 +1,21 @@
-<mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #drawer class="sidenav" 
-      fixedInViewport="false"
-      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-      [mode]="(isHandset$ | async) ? 'over' : 'side'"
-      [opened]="!(isHandset$ | async)">
-    <mat-toolbar>Menu</mat-toolbar>
-    <mat-nav-list>
-      <a mat-list-item href="#">Principal</a>
-      <a mat-list-item href="#">Lugares Recomendados</a>
-      <a mat-list-item href="#">Galeria</a>
+<mat-sidenav-container >
+  <mat-sidenav #sidenav class="contenedor">
+      <mat-nav-list>
+        <h2 mdSubheader>Traveler</h2>
+        <a mat-list-item target="_blank" href="#">Destino</a>
+        <a mat-list-item target="_blank" href="#">Galeria</a>
+        <a mat-list-item target="_blank" href="#">Recomendaciones</a>
     </mat-nav-list>
   </mat-sidenav>
-  <mat-sidenav-content>
-    <mat-toolbar color="primary">
-      <button
-        type="button"
-        aria-label="Toggle sidenav"
-        mat-icon-button
-        (click)="drawer.toggle()"
-        *ngIf="isHandset$ | async">
-        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
-      </button>
-      <span >Viajero!!</span>
-    </mat-toolbar>
-    <!-- Add Content Here -->
-  </mat-sidenav-content>
+  <mat-toolbar class="menu">
+      <!-- <button type="button" mat-button (click)="sidenav.open()">Menu</button> -->
+      <mat-icon color="accent" mat-icon (click)="sidenav.open()">dehaze</mat-icon>
+      <!-- <h1> Traveler</h1> -->
+  </mat-toolbar>
+    <!-- el cuerpo de la pagina -->
+  <div class="content">
+      <img  src="../imagenes/fondo.jpg">
+      
+  </div>
+
 </mat-sidenav-container>

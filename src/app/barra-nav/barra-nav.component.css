@@ -1,18 +1,26 @@
-.sidenav-container {
-  height: 100%;
+body, html {
+  padding: 0;
+  margin: 0;
+  color: bl;
+}
+.contenedor
+{
+  background-color: teal;
+}
+.menu{
+  background-color: teal;
 }
 
-.sidenav {
-  width: 200px;
+/* Sidenav de la misma altura que la ventana */
+mat-sidenav-container {
+  height:100vh;
+   background-color:darkslategray;
+
+  
 }
 
-.sidenav .mat-toolbar {
-  background: inherit;
+/* centrar el logo */
+.content {
+  text-align: center;
+  background-size: cover;
 }
-
-.mat-toolbar.mat-primary {
-  position: sticky;
-  top: 0;
-  z-index: 1;
-}
-
