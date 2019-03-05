@@ -7,5 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Traveler';
+  centered = false;
+  disabled = false;
+  unbounded = false;
+
+  radius: number;
+  color: string;
 
 }
