@@ -1,20 +1,21 @@
-<mat-sidenav-container fullscreen>
-        <mat-sidenav #sidenav class="contenedor">
-            <mat-nav-list>
-              <h2 mdSubheader>Traveler</h2>
-              <a mat-list-item target="_blank" href="destinos">Destino</a>
-              <a mat-list-item target="_blank" href="#">Galeria</a>
-              <a mat-list-item target="_blank" href="#">Recomendaciones</a>
-          </mat-nav-list>
-        </mat-sidenav>
-      
-        <mat-toolbar class="menu">
-            <mat-icon color="accent" mat-icon (click)="sidenav.open()">dehaze</mat-icon>
-        </mat-toolbar>
-        <div class="portada">
-            <img id="fondo-portada" src="assets/imagenes/background.jpg">; 
-        </div>
-      
-      </mat-sidenav-container>
-      
-<router-outlet></router-outlet>
+
+<mat-toolbar class="menu">
+        
+         <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" >
+                <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        </button>
+                  <!-- <span><img src="./assets/background.png"></span> -->
+</mat-toolbar>
+         <mat-sidenav-container >
+                <mat-sidenav #sidenav #drawer mode="side" opened role="navigation" class="contenedor">
+                  <mat-nav-list >
+                        <a mat-list-item  href="·">Inicio</a>
+                        <a mat-list-item  href="destinos">Destino</a>
+                        <a mat-list-item  href="galeria">Galeria</a>
+                        <a mat-list-item  href="recomendaciones">Recomendaciones</a>
+                  </mat-nav-list>
+                </mat-sidenav>
+                <mat-sidenav-content>
+                        <router-outlet></router-outlet>
+                </mat-sidenav-content>
+        </mat-sidenav-container>

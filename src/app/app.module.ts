@@ -6,7 +6,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 //importando material
 import {MaterialModule} from "./material";
-import { BarraNavComponent } from './barra-nav/barra-nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
 import { DestinosComponent } from './destinos/destinos.component';
@@ -15,7 +14,6 @@ import { RecomendacionesComponent } from './recomendaciones/recomendaciones.comp
 @NgModule({
   declarations: [
     AppComponent,
-    BarraNavComponent,
     DestinosComponent,
     GaleriaComponent,
     RecomendacionesComponent

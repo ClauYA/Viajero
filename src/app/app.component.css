@@ -1,1 +1,21 @@
 
+body, html {
+    padding: 0;
+    margin: 0;
+    
+  }
+  .contenedor
+  {
+    background-color:teal;
+   
+  }
+  .menu{
+    background-color:teal;
+  }
+  
+  
+  mat-sidenav-container {
+    height:100vh;
+    background-color: darkslategray;
+  }
+  
