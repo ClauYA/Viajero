@@ -1,9 +1,5 @@
 
-body, html {
-    padding: 0;
-    margin: 0;
-    
-  }
+
   .contenedor
   {
     background-color:teal;
@@ -16,6 +12,5 @@ body, html {
   
   mat-sidenav-container {
     height:100vh;
-    background-color: darkslategray;
-  }
   
+  }
