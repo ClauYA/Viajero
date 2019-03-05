@@ -1,1 +1,20 @@
-<app-barra-nav></app-barra-nav>
+<mat-sidenav-container fullscreen>
+        <mat-sidenav #sidenav class="contenedor">
+            <mat-nav-list>
+              <h2 mdSubheader>Traveler</h2>
+              <a mat-list-item target="_blank" href="destinos">Destino</a>
+              <a mat-list-item target="_blank" href="#">Galeria</a>
+              <a mat-list-item target="_blank" href="#">Recomendaciones</a>
+          </mat-nav-list>
+        </mat-sidenav>
+      
+        <mat-toolbar class="menu">
+            <mat-icon color="accent" mat-icon (click)="sidenav.open()">dehaze</mat-icon>
+        </mat-toolbar>
+        <div class="portada">
+            <img id="fondo-portada" src="assets/imagenes/background.jpg">; 
+        </div>
+      
+      </mat-sidenav-container>
+      
+<router-outlet></router-outlet>
