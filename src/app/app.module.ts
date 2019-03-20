@@ -11,12 +11,14 @@ import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, Mat
 import { DestinosComponent } from './destinos/destinos.component';
 import { GaleriaComponent } from './galeria/galeria.component';
 import { RecomendacionesComponent } from './recomendaciones/recomendaciones.component';
+import { BarraComponent } from './barra/barra.component';
 @NgModule({
   declarations: [
     AppComponent,
     DestinosComponent,
     GaleriaComponent,
-    RecomendacionesComponent
+    RecomendacionesComponent,
+    BarraComponent
     
   ],
   imports: [
